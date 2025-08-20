@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* !-- !---------------Header Section------------------ */
+.nav {
+    background-color: #F5F3F4;
+    padding: 10px 10px;
+    border-style: double;
+    border-width: 7px;
+    border-color: #646363;
+    border-radius: 15px;
+
+}
+
+.header .nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    /* background-color: red; */
+
+}
+
+/* .header .nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    transition: 0.50s;
+} */
+
+/* .header .nav ul li a:hover {
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: #868686;
+    color: #F5F3F4;
+} */
+ .header .nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px; /* ফিক্সড padding */
+    border-radius: 15px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.header .nav ul li a:hover {
+    background-color: #868686;
+    color: #F5F3F4;
+    transform: scale(1.1); /* হালকা বড় হবে */
+}
+
+.mechalogy-baner {
+    width: 100%;
+    overflow: hidden; /* বাড়তি অংশ লুকাবে */
+}
+
+.mechalogy-baner img {
+    width: 100%;   /* সবসময় পুরো স্ক্রিন জুড়ে যাবে */
+    height: auto;  /* height auto রাখলে ছবির ratio ঠিক থাকবে */
+    display: block;
+}
+
+
+
+/* !-- !---------------Mechalogy Book Section------------------ */
+.mechalogy-book-section>h1,
+.online-Course>h1,
+.main-manu>h1,
+.certification>h1,
+.book-ibrary-location>h1 {
+    margin: 60px 10px 20px 10px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 500;
+    color: #005D7F;
+    font-weight: bold;
+}
+
+.row {
+
+    margin: 5% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mechalogy-book-col {
+    flex-basis: 21%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px 50px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.mechalogy-book-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.mechalogy-book-col img {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.mechalogy-book-col h2 {
+    color: #005D7F;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.mechalogy-book-col p {
+    color: #005D7F;
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: #005D7F;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.btn:hover {
+    color: black;
+    background: #868686;
+    cursor: pointer;
+}
+
+/* !-- !---------------Online Course Section------------------ */
+.online-Course .row {
+    margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.online-course-col {
+    flex-basis: 30%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px 30px 12px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.online-course-col>h2,
+.main-manu-col>h2,
+.certification-col>h2 {
+    color: #005D7F;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.online-course-col>h3 {
+    color: #005D7F;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* !-- !---------------Main Manu Section------------------> */
+.main-manu .row {
+    margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-manu-col {
+    flex-basis: 20%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px 30px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.main-manu-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-manu-col img {
+    width: 215px;
+    height: 225px;
+}
+
+.main-manu-col>h2,
+.certification-col>h2 {
+    color: #005D7F;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* !-- !---------------Certification Section------------------ */
+
+.certification.row {
+    margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.certification-col {
+    flex-basis: 48%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px 30px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.certification-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.certification-col img {
+    width: 100%;
+    display: block;
+}
+
+/* !-- !---------------Book library location Section------------------ */
+.book-ibrary-location .row {
+    margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.book-ibrary-location-col {
+    flex-basis: 20%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px 30px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.book-ibrary-location-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* !-- !---------------Footer Section------------------ */
+.footer .row1 {
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    justify-content: space-between;
+    background: #fff3f3;
+}
+
+.footer-col {
+    align-items: center;
+    flex-basis: 31%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 10px;
+}

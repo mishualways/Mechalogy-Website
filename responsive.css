@@ -1,0 +1,46 @@
+@media(max-width: 905px) {
+    .mechalogy-book-section .row,
+    .online-Course .row{
+        flex-direction: column;
+    }
+    .main-manu-col h2{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .header .nav ul li a {
+        font-size: 10px;
+    }
+
+    .row,
+    .row1 {
+        flex-direction: column;
+    }
+
+    .mechalogy-book-col {
+        margin-bottom: 10px;
+    }
+
+    .mechalogy-book-section>h1,
+    .online-Course>h1,
+    .main-manu>h1,
+    .certification>h1,
+    .book-ibrary-location>h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .online-course-col>h2,
+    .online-course-col>h3{
+        font-size: 20px;
+    }
+    .mechalogy-book-col h2,
+    .main-manu-col h2,
+    .certification-col h2,
+    .book-ibrary-location-col h2{
+        font-size: 20px;
+    }
+    .mechalogy-book-col p{
+        font-size: 18px;
+    }
+}
